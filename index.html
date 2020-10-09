@@ -11,9 +11,6 @@
 <style>
 
 body {
-
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
 	color: #333;
 }
 
@@ -32,7 +29,11 @@ body {
 	background: rgba(10, 10, 10, 0.8);
 	text-align: center;
 	margin: auto;
+}
 
+#loginbutton {
+	font-size: 12px;
+	border: none;
 }
 
 div.horizontal {
@@ -49,17 +50,20 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
+	font-size: 10px;
+   color: #adadad;
    text-align: center;
 }
 
 ::-moz-placeholder {
-   color: #955;
+   font-size: 10px;
+	 color: #adadad;
    text-align: center;
 }
 
 :-ms-input-placeholder {
-   color: #955;
+   font-size: 10px;
+	 color: #adadad;
    text-align: center;
 }
 
@@ -71,7 +75,7 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="enter password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
 					<p id="wrongPassword" style="display: none">wrong password</p>
 				</div>
